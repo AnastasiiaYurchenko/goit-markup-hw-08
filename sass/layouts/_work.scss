@@ -1,0 +1,34 @@
+.section.work {
+    padding-top: 0;
+}
+
+.pictures-list {
+    display: flex;
+}
+
+.pictures-list__item {
+    width: calc((100% - 60px) / 3);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.pictures-list__bottom {
+    position: relative;
+}
+
+.pictures-list__text {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
