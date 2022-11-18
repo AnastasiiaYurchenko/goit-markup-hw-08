@@ -11,15 +11,23 @@
 }
 
 .card-list__item {
-    width: calc((100% - 90px) / 4);
+    // width: calc((100% - 90px) / 4);
+    width: 100%;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
     }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
+
 }
 
 .card-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .card-list__wrap {

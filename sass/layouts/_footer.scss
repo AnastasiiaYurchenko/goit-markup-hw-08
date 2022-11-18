@@ -6,7 +6,9 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    // align-items: baseline;
+    justify-content: center;
 }
 
 .address-items:not(:last-child) {
@@ -15,6 +17,7 @@
 
 .address-item.link {
     line-height: 1.71;
+    text-align: center;
     color: var(--white-text-color);
 
     &:hover,
@@ -29,6 +32,7 @@
 
 .footer-contacts-item.link {
     line-height: 1.71;
+    text-align: center;
     color: var(--footer-contacts-text-color);
 
     &:hover,
@@ -40,7 +44,8 @@
 .footer-social-text {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1, 14px;
+    line-height: 1.14;
+    text-align: center;
     text-transform: uppercase;
     color: var(--white-text-color);
     margin-bottom: 20px;
@@ -56,6 +61,7 @@
 
 .sign-text {
     display: block;
+    text-align: center;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -115,4 +121,6 @@
 
 .sign-form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

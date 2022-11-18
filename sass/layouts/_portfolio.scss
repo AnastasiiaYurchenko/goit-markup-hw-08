@@ -1,10 +1,22 @@
 .buttons-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    // gap: 8px;
+    // justify-content: center;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 
 .btn-item:not(:last-child) {
+    margin-bottom: 15px;
     margin-right: 8px;
 }
 
@@ -55,7 +67,16 @@
 }
 
 .project-item {
-    flex-basis: calc((100% - 60px) / 3);
+    // flex-basis: calc((100% - 60px) / 3);
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .card-link {
