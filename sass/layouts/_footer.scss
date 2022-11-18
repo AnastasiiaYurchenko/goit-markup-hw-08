@@ -5,15 +5,44 @@
 }
 
 .footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    // align-items: baseline;
-    justify-content: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+}
+
+.footer__logo {
+    margin-bottom: 28px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+
+.address-items {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .address-items:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
+
+.address-list {
+    margin-bottom: 60px;
+}
+
+.footer-social-wrap {
+    margin-bottom: 60px;
+}
+
 
 .address-item.link {
     line-height: 1.71;
@@ -24,6 +53,7 @@
     &:focus {
         color: var(--accent-color);
     }
+
 }
 
 .address-list .link {
@@ -49,14 +79,26 @@
     text-transform: uppercase;
     color: var(--white-text-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-logo-address-wrap {
-    margin-right: 70px;
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
 
 .sign-in {
-    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .sign-text {
@@ -67,6 +109,10 @@
     text-transform: uppercase;
     color: var(--white-text-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .input-sign-mail {
@@ -74,10 +120,10 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 15px 16px;
-    margin-right: 15px;
+    margin-bottom: 20px;
     outline: transparent;
     color: var(--white-text-color);
 
@@ -89,6 +135,15 @@
         align-items: center;
         color: rgba(255, 255, 255, 0.6);
     }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 15px;
+    }
 }
 
 
@@ -96,7 +151,7 @@
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 10px 28px;
+    padding: 10px 28px 10px 31px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -111,16 +166,35 @@
     &:focus {
         background-color: var(--active-button-color);
     }
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 28px;
+    }
 }
 
 
 .sign-icon {
-    margin-left: 10px;
+    margin-left: 12px;
     fill: var(--main-background-color);
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 10px;
+    }
 }
 
 .sign-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    // width: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: baseline;
+    }
 }
