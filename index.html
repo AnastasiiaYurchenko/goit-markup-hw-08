@@ -21,7 +21,7 @@
 
   <body>
     <header class="header">
-      <div class=" header__container">
+      <div class="header__container">
         <nav class="navigation">
           <a href="./index.html" class="logo link navigation__logo">Web<span class="logo__part logo__part--dark-color">Studio</span></a>
           <ul class="site-nav list">
@@ -48,17 +48,38 @@
             >
           </li>
         </ul>
-        <button class="btn-menu" type="button">
-          <svg class="btn-menu__open" width="40" height="40">
+        <button class="btn-menu-open js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="btn-menu-open__icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu-open"></use>
           </svg>
         </button>
-        <div>
-          <button class="btn-menu" type="button">
-            <svg class="btn-menu__close" width="40" height="40">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="btn-menu-close js-close-menu" type="button">
+            <svg class="btn-menu-close__icon" width="40" height="40">
               <use href="./images/icons.svg#icon-menu-close"></use>
             </svg>
           </button>
+          <ul class="nav-menu list">
+            <li class="nav-menu__item"><a href="./index.html" class="nav-menu__link link">Студія</a></li>
+            <li class="nav-menu__item"><a href="./portfolio.html" class="nav-menu__link link">Портфоліо</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link link">Контакти</a></li>
+          </ul>
+          <div class="mob-menu-bottom">
+            <ul class="menu-contacts list">
+              <li class="menu-contacts__item">
+                <a href="tel:+380961111111" class="menu-contacts__link link"> +38 096 111 11 11</a>
+              </li>
+              <li class="menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="menu-contacts__link link"> info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-socials list">
+              <li class="mob-socials__item"><a href="" class="mob-socials__link link">Instagram</a></li>
+              <li class="mob-socials__item"><a href="" class="mob-socials__link link">Twitter</a></li>
+              <li class="mob-socials__item"><a href="" class="mob-socials__link link">Facebook</a></li>
+              <li class="mob-socials__item"><a href="" class="mob-socials__link link">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -478,5 +499,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
