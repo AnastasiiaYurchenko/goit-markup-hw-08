@@ -171,8 +171,9 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+
     &:hover,
-    &:focus{
+    &:focus {
         color: var(--accent-color);
     }
 }
@@ -206,10 +207,11 @@
     margin-top: 64px;
 }
 
-.mob-socials__item{
+.mob-socials__item {
     display: flex;
     align-items: center;
 }
+
 .mob-socials__item:not(:last-child)::after {
     content: '';
     display: inline-block;
