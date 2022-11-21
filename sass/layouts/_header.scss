@@ -204,12 +204,14 @@
 
 .mob-socials {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
 }
 
 .mob-socials__item {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .mob-socials__item:not(:last-child)::after {
