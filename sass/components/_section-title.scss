@@ -1,10 +1,15 @@
-
 .work__title,
 .people__title,
 .clients-title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: var(--secondary-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }

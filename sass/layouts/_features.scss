@@ -4,6 +4,11 @@
     text-transform: uppercase;
     color: var(--secondary-text-color);
     margin-bottom: 10px;
+    text-align: center;
+
+    @include tablet {
+        text-align: left;
+    }
 }
 
 .card-list__descr {
@@ -11,7 +16,6 @@
 }
 
 .card-list__item {
-    // width: calc((100% - 90px) / 4);
     width: 100%;
 
     @media screen and (min-width: 768px) {
