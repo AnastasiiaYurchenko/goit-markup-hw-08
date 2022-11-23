@@ -325,6 +325,10 @@ body {
   color: var(--accent-color);
 }
 
+.nav-menu__current {
+  color: var(--accent-color);
+}
+
 .nav-menu__item:not(:last-child),
 .menu-contacts__item:not(:last-child) {
   margin-bottom: 32px;
